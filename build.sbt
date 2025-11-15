@@ -12,7 +12,7 @@ Test / parallelExecution := true
 // Non-concurrent execution is needed for Server with starting / stopping HttpServer
 Global / concurrentRestrictions += Tags.limit(Tags.Test, 1)
 
-licenses := Seq(("License", url("https://github.com/haas-labs/ext-proto/blob/main/LICENSE.md")))
+licenses := Seq(("ASF2", url("https://www.apache.org/licenses/LICENSE-2.0")))
 
 initialize ~= { _ =>
   System.setProperty("config.file", "conf/application.conf")
